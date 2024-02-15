@@ -8,7 +8,18 @@ Our experiments are run on 8 NVIDIA Tesla V100 GPU. The results may vary due to 
 ### Existing Experiments
 To start with existing experiments, you can run the bash scripts in `example` directory. All hyper-parameters are set in the scripts.
 
-You should change the `res_flag`, `merge_flag` and `pre_num` in the scripts to run different models.
+You should change the `res_flag`, `merge_flag` and `pre_num` in the scripts to run different models. The value of hyper-parameters means:
+
+| parameters in paper | parameters in code |
+|---------------------|--------------------|
+| w/o res             | `res_flag=0`       |
+| res_is              | `res_flag=1`       |
+| res_bs              | `res_flag=2`       |
+| res_ms              | `res_flag=3`       |
+| w/o merge           | `merge_flag=0`     |
+| merge_bi            | `merge_flag=1`     |
+| merge_bw            | `merge_flag=2`     |
+
 
 ### New Experiments
 It is also easy to conduct experiments in new models. To simplify the use of ResLoRA, we implement it as a wrapped model just like `peft` of Huggingface.
