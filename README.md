@@ -17,8 +17,8 @@ You should change the `res_flag`, `merge_flag` and `pre_num` in the scripts to r
 | res_bs              | `res_flag=2`       |
 | res_ms              | `res_flag=3`       |
 | w/o merge           | `merge_flag=0`     |
-| merge_bi            | `merge_flag=1`     |
-| merge_bw            | `merge_flag=2`     |
+| merge_bi            | `merge_flag=3`     |
+| merge_bw            | `merge_flag=4`     |
 
 
 ### New Experiments
